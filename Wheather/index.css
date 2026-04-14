@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Main card */
+.container {
+  width: 320px;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); /* deeper shadow */
+  text-align: center;
+  color: #fff;
+}
+
+/* Title */
+h1 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+/* Search section */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* 🔥 Red focus effect */
+.search-box input:focus {
+  border: 2px solid #ff4d4d;
+  box-shadow: 0 0 8px rgba(255, 77, 77, 0.4);
+}
+
+.search-box button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #ffffff;
+  color: #2a5298;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* 🔥 Red hover */
+.search-box button:hover {
+  background: #ff4d4d;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 77, 77, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Weather section */
+.weather-box {
+  margin-top: 20px;
+  padding-top: 15px;
+
+  border-top: 2px solid rgba(255, 77, 77, 0.6); /* red divider */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* City */
+#cityName {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Temperature */
+#temperature {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+/* Description */
+#description {
+  font-size: 14px;
+  opacity: 0.85;
+  text-transform: capitalize;
+}
+
+/* Icon */
+#weatherIcon {
+  width: 90px;
+  margin-top: 5px;
+}
