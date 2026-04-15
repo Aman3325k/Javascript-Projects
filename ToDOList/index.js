@@ -1,7 +1,6 @@
 function savedata() {
     const ul = document.querySelector("#list ul");
 
-    // 🔥 FORCE checkbox state into HTML
     ul.querySelectorAll("input[type='checkbox']").forEach(cb => {
         if (cb.checked) {
             cb.setAttribute("checked", "checked");
